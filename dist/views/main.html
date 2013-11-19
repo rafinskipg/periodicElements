@@ -1,0 +1,23 @@
+<div class="header">
+	<ul class="nav nav-pills pull-right">
+		<li class="active"><a href="#/">Home</a></li>
+	</ul>
+	<h3 class="text-muted">The periodic js table</h3>
+</div>
+<h1>The periodic JSON!</h1>
+<div class="jumbotron">
+	<div class="tableElements">
+		<div ng-repeat="row in elements.table" class="row">
+			<div class="element {{element.position}}" ng-show="element.name.length > 0 " ng-click="show(element.small)" ng-repeat="element in row.elements" style="{{getStyles(element.position, $parent.$index)}}">
+				<p>{{element.small}}</p>
+				<span class="molar">{{element.molar}}</span>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<div class="footer">
+	<p>♥</p>
+</div>

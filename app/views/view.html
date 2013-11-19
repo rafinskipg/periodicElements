@@ -1,0 +1,24 @@
+<div class="header">
+	<ul class="nav nav-pills pull-right">
+		<li class="active"><a href="#/">Home</a></li>
+	</ul>
+	<h3 class="text-muted">The periodic js table</h3>
+</div>
+<h1>The periodic JSON!</h1>
+<div class="jumbotron">
+	
+	<div class="element {{element.position}}" background-color="generateColor(element.position)">
+		<h2>{{element.name}}</h2>
+		<p>{{element.small}}</p>
+		<p ng-show="element.group.length > 0">Group : {{element.group}}</p>
+		<p>Number of element : {{element.number}}</p>
+		<span >Molar : {{element.molar}}</span>
+	</div>
+
+</div>
+
+</div>
+
+<div class="footer">
+	<p>♥</p>
+</div>
