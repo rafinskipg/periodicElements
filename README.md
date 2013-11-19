@@ -1,5 +1,7 @@
 periodicElements
 ================
+[demo](http://monchacos.com/experiments/periodic-elements)
+
 Run
 ``` 
 npm install
